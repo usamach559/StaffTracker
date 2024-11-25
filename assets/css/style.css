@@ -1471,6 +1471,20 @@ body {
     box-shadow: 0px 1px 2px 0px rgba(184, 200, 224, 0.2);
 
 }
+.user-page .form-select {
+    background-color: transparent;
+    border: 1px solid rgba(238, 238, 238, 1) !important;
+    border-radius: 7px !important;
+    box-shadow: 0px 1px 2px 0px rgba(184, 200, 224, 0.2);
+
+}
+.user-page .form-select option{
+    background-color: transparent;
+    border: 1px solid rgba(238, 238, 238, 1) !important;
+    border-radius: 7px !important;
+    box-shadow: 0px 1px 2px 0px rgba(184, 200, 224, 0.2);
+
+}
 
 .modal-save-button {
     background-color: #0E0042 !important;

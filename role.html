@@ -159,7 +159,8 @@
                             </a>
                         </div>
                         <div>
-                            <a href="#" class="btn users-btn-role-second d-flex align-items-center gap-2 me-3">
+                            <a href="#" class="btn users-btn-role-second d-flex align-items-center gap-2 me-3"
+                                data-bs-toggle="modal" data-bs-target="#customModal">
                                 <img src="assets/svg/suitcase.svg" alt="">
                                 Users
                             </a>
@@ -185,13 +186,13 @@
                                     Admin
                                 </td>
                                 <td><span class="permission-table-td">
-                                    Admin
-                                </span></td>
+                                        Admin
+                                    </span></td>
                                 <td>12 July, 2024</td>
                                 <td style="padding: 0px !important; " class="d-flex">
                                     <a href=""><img src="assets/svg/Frame 1.svg" alt=""></a>
                                     <a href=""><img src="assets/svg/Frame 2.svg" alt=""></a>
-                                    
+
                                 </td>
                             </tr>
                         </tbody>
@@ -208,7 +209,38 @@
             </div>
 
         </div>
-
+        <div class="user-page">
+            <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <div class="d-flex justify-content-between mb-4">
+                            <h5 class="modal-title" id="customModalLabel"><img src="assets/svg/suitcase2.svg"
+                                    class="me-2">Add Role</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-container">
+                                <label for="name" class="modal-label">Role Name <span>*</span></label>
+                                <input type="text" class="form-control mt-2">
+                            </div>
+                            <div class="input-container mt-3">
+                                <label for="role" class="modal-label">Role<span>*</span></label>
+                                <select id="role" class="form-select mt-2">
+                                    <option selected>Select Permissions</option>
+                                    <option value="admin">Admin</option>
+                                    <option value="editor">Editor</option>
+                                    <option value="viewer">Viewer</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn modal-save-button">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
         <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
         <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
