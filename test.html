@@ -1,0 +1,251 @@
+<a href="/">
+
+
+    TrackItNow </div>
+   </a>
+</div>
+
+<button type="button" class="jw-mobile-menu__button jw-mobile-toggle" aria-label="Toggle menu">
+   <span class="jw-icon-burger"></span>
+</button>
+</div>
+<header class="header-wrap js-topbar-content-container js-fixed-header-container">
+<div class="header-wrap__inner">
+   <div class="header">
+       <div class="jw-header-logo">
+           <div class="jw-header jw-header-title-container jw-header-text jw-header-text-toggle" data-stylable="true">
+               <a id="jw-header-title" class="jw-header-title" href="/">
+                   TrackItNow </a>
+           </div>
+       </div>
+   </div>
+   <nav class="menu jw-menu-copy">
+       <ul id="jw-menu" class="jw-menu jw-menu-horizontal">
+           <li class="jw-menu-item">
+               <a class="jw-menu-link" href="/track_home/" data-page-link-id="24182718">
+                   <span class="">
+                       Home </span>
+               </a>
+           </li>
+           <li class="jw-menu-item jw-menu-is-active">
+               <a class="jw-menu-link js-active-menu-item" href="/ship_now/" data-page-link-id="24184780">
+                   <span class="">
+                       Ship Now </span>
+               </a>
+           </li>
+           <li class="jw-menu-item">
+               <a class="jw-menu-link" href="/order_list/" data-page-link-id="24184796">
+                   <span class="">
+                       Track order </span>
+               </a>
+           </li>
+           <li class="jw-menu-item">
+               <a class="jw-menu-link" href="/" data-page-link-id="24182760">
+                   <span class="">
+                       About Us </span>
+               </a>
+           </li>
+           <li class="jw-menu-item">
+               <a class="jw-menu-link" href="/contact" data-page-link-id="24182761">
+                   <span class="">
+                       Contact </span>
+               </a>
+           </li>
+
+       </ul>
+
+
+   </nav>
+</div>
+</header>
+<div id="jw-slideshow" class="jw-slideshow jw-slideshow-toggle jw-slideshow--height-ratio jw-slideshow--parallax jw-slideshow--parallax-effect banner-sm" data-pause="7000" data-autoplay="1" data-transition="horizontal" data-ratio="0.33">
+<div class="bx-wrapper">
+   <div class="bx-viewport">
+       <ul>
+           <li class="jw-slideshow-slide">
+               <div data-key="0" data-text="" data-subtext="" data-buttontext="" data-buttontarget="_self" data-backdrop="1" data-layout="no-text" style="background-position: 49% 52%; background-image: url(&#039;https://assets.jwwb.nl/assets/templates/concert-banner/countdown/slideshow.jpg?enable-io=true&amp;fit=bounds&amp;width=1920&amp;height=1920&#039;);" data-background-position-x="0.49" data-background-position-y="0.52" class="jw-slideshow-slide-content jw-slideshow-slide-content--display-cover jw-slideshow-slide-content--backdrop ">
+                   <div class="jw-slideshow-slide-backdrop"></div>
+                   <div class="bx-caption-wrapper jw-slideshow-slide-align-center">
+                       <div class="bx-caption">
+                           <div class="jw-slideshow-title"></div>
+                       </div>
+                   </div>
+               </div>
+           </li>
+
+       </ul>
+   </div>
+</div>
+<!--    <div class="jw-slideshow__scroll-arrow">
+   <i class="website-rendering-icon-down-open-big"></i>
+</div> -->
+<style>
+   .jw-slideshow-slide-content {
+       min-height: 33vh;
+   }
+
+   @media screen and (min-height: 1200px) {
+       .jw-slideshow-slide-content {
+           min-height: 396px;
+       }
+   }
+</style>
+</div>
+
+<script nonce="e43b6b6e48ae8b8bda4c47be76cec015">
+JOUWWEB.templateConfig = {
+   header: {
+       selector: '.header-wrap__inner',
+       mobileSelector: '.jw-mobile-menu',
+       updatePusher: function(topHeight) {
+           var $sliderStyle = $('#sliderStyle');
+
+           if ($sliderStyle.length === 0) {
+               $sliderStyle = $('<style />')
+                   .attr('id', 'sliderStyle')
+                   .appendTo(document.body);
+           }
+
+           // Header height without mobile bar
+           var headerHeight = $('.header-wrap__inner').outerHeight();
+
+           var paddingTop = topHeight;
+           var paddingBottom = Math.min(headerHeight * (2 / 3), 60);
+           $sliderStyle.html(
+               '.jw-slideshow-slide-content {' +
+               '    padding-top: ' + paddingTop + 'px;' +
+               '    padding-bottom: ' + paddingBottom + 'px;' +
+               '}' +
+               '.bx-controls-direction {' +
+               '    margin-top: ' + ((paddingTop - paddingBottom) / 2) + 'px;' +
+               '}'
+           );
+
+           // make sure slider also gets correct height (because of the added padding)
+           $('.jw-slideshow-slide[aria-hidden=false]').each(function(index) {
+               var $this = $(this);
+               topHeight = $this.outerHeight() > topHeight ? $this.outerHeight() : topHeight;
+               $this.closest('.bx-viewport').css({
+                   height: topHeight + 'px',
+               });
+           });
+
+           // If a page has a message-bar, offset the mobile nav.
+           const $messageBar = $('.message-bar');
+           if ($messageBar.length > 0) {
+               $('.js-mobile-menu, .jw-menu-clone').css('top', $messageBar.offset().top + $messageBar.outerHeight());
+           }
+       },
+   },
+   mainContentOffset: function() {
+       const $body = $('body');
+
+       function measureAffixedHeaderHeight() {
+           const $headerWrap = $('.header-wrap');
+           const $headerWrapInner = $('.header-wrap__inner');
+
+           // Early return if header is already affixed
+           if ($body.hasClass('jw-is-header-affix')) {
+               return $headerWrap.height();
+           }
+
+           // Switch to affixed header (without transition)
+           $headerWrapInner.css('transition', 'none');
+           $body.addClass('jw-is-header-affix');
+
+           // Measure affixed header height
+           const headerHeight = $headerWrap.height();
+
+           // Switch back to unaffixed header (without transition)
+           $body.removeClass('jw-is-header-affix');
+           $headerWrap.height(); // force reflow
+           $headerWrapInner.css('transition', '');
+
+           return headerHeight;
+       }
+
+       const headerHeight = measureAffixedHeaderHeight();
+       return $('.main-content').offset().top - ($body.hasClass('jw-menu-is-mobile') ? 0 : headerHeight);
+   },
+};
+</script>
+<div class="main-content">
+
+<main class="block-content">
+   <div data-section-name="content" class="jw-section jw-section-content jw-responsive">
+       <div id="jw-element-404497730" data-jw-element-id="404497730" class="jw-tree-node jw-element jw-strip-root jw-tree-container">
+           <div id="jw-element-404497732" data-jw-element-id="404497732" class="jw-tree-node jw-element jw-strip jw-tree-container jw-strip--default jw-strip--style-color jw-strip--color-default jw-strip--padding-both jw-node-is-first-child jw-strip--primary jw-node-is-last-child">
+               <div class="jw-strip__content-container">
+                   <div class="jw-strip__content jw-responsive">
+                       <div id="jw-element-404502555" data-jw-element-id="404502555" class="jw-tree-node jw-element jw-contact-form jw-node-is-first-child jw-node-is-last-child">
+                           <!-- Display success message 
+                            {% if success_message %}
+                               <div class="alert alert-success">
+                                   <p>{{ success_message }}</p>
+                               </div>
+                           {% endif %} -->
+                           {% block content %}
+                           {% endblock %}
+
+                           <form action="{% url 'ship_now' %}" method="POST" class="jw-form-container">
+                               {% csrf_token %}
+                               <div class="jw-element-form-group">
+                                   <label for="pickup_location" class="jw-element-form-label">Pick location(eir code):</label>
+                                   <div class="jw-element-form-content">
+                                       <input type="text" name="pickup_location" required="required" id="pickup_location" pattern="[A-Za-z0-9]{3}[A-Za-z0-9]{2}[A-Za-z0-9]{2}" title="Please enter a valid Eircode (e.g., D12E9C7)" class="form-control&#x20;jw-element-form-input-text">
+                                   </div>
+                               </div>
+                               <div class="jw-element-form-group">
+                                   <label for="drop_location" class="jw-element-form-label">Drop location(eir code):</label>
+                                   <div class="jw-element-form-content">
+                                       <input type="text" name="drop_location" required="required" id="drop_location" pattern="[A-Za-z0-9]{3}[A-Za-z0-9]{2}[A-Za-z0-9]{2}" title="Please enter a valid Eircode (e.g., D12E9C7)" class="form-control&#x20;jw-element-form-input-text">
+                                   </div>
+                               </div>
+
+                               <div class="hidden"><label for="jwFormQ32MAm_captcha" class="jw-element-form-label">Leave this field empty</label>
+                                   <div class="jw-element-form-content">
+                                       <input type="text" name="captcha" id="jwFormQ32MAm_captcha" class="form-control&#x20;jw-element-form-input-text" value="">
+                                   </div>
+                               </div>
+                               <input type="hidden" name="csrf_3090566" id="jwFormsGo5U6_csrf_3090566" value="RlBTtPyYWSFKsGUq">
+                               <div class="jw-element-form-group">
+                                   <button type="submit" class="jw-element-form-offset jw-btn jw-btn--size-small" name="submit">
+                                       <div class="jw-btn-caption">Place order</div>
+                                   </button>
+                               </div>
+
+                           </form>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</main>
+</div>
+
+<footer class="block-footer">
+<div data-section-name="footer" class="jw-section jw-section-footer jw-responsive">
+   <div class="jw-strip jw-strip--default jw-strip--style-color jw-strip--primary jw-strip--color-default jw-strip--padding-both">
+       <div class="jw-strip__content-container">
+           <div class="jw-strip__content jw-responsive">
+               <div id="jw-element-404457167" data-jw-element-id="404457167" class="jw-tree-node jw-element jw-simple-root jw-tree-container jw-tree-container--empty">
+               </div>
+               <div class="jw-credits clear">
+                   <div class="jw-credits-owner">
+                       <div id="jw-footer-text">
+                           <div class="jw-footer-text-content">
+                               &copy; 2024 TrackItNow </div>
+                       </div>
+                   </div>
+                   <div class="jw-credits-right">
+                       <div id="jw-credits-tool">
+
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+</footer>
