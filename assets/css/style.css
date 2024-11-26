@@ -945,12 +945,10 @@ body {
 @media(min-width:990px) {
     .dashboard-fourth-row-col-second {
         width: 39%;
-        margin: 0px 2px 0px 8px;
     }
 
     .dashboard-fourth-row-col-third {
         width: 27%;
-        margin: 0px 2px 0px 8px;
     }
 
 }
