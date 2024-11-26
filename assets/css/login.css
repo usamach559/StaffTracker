@@ -185,7 +185,7 @@ body {
 @media (max-width:500px) {
     .third-row-login {
         width: 100% !important;
-        gap: 10px;
+        gap: 20px;
     }
     .login-form-input {
         max-width: 403px !important;
