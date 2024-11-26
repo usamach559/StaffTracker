@@ -1512,3 +1512,182 @@ body {
     color: #FFFFFF !important;
     padding: 12px 45px;
 }
+
+
+
+
+
+
+
+
+
+.custom-dropdown {
+    width: 358px;
+padding: 15px 0px;
+border-radius: 22px;
+background-color: #ffffff;
+border: none;
+font-family: 'Arial', sans-serif;
+}
+@media(max-width:400px){
+.custom-dropdown {
+    width: 310px;
+
+}
+
+}
+
+.custom-dropdown .dropdown-header {
+text-align: center;
+padding-bottom: 10px;
+}
+
+.custom-dropdown .profile-img {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+
+.custom-dropdown .admin-lable {
+font-size: 16px;
+color: #0A1629;
+font-weight: 400;
+font-family: 'Poppins-Regular';
+
+margin-bottom: 5px;
+}
+
+.custom-dropdown .email-admin {
+margin: 0;
+font-size: 13px;
+font-family: 'Poppins-Regular';
+font-weight: 400;
+color: #6c757d;
+}
+.custom-dropdown .accounts {
+padding: 8px 21px;
+
+font-size: 13px;
+font-family: 'Poppins-Regular';
+font-weight: 700;
+margin: 0px;
+color: #6c757d;
+}
+
+.custom-dropdown .badge {
+padding: 4px 8px;
+color: #001A72 !important;
+background-color: #DAEBFF !important;
+display: grid
+;
+width: 59px;
+align-items: center;
+font-size: 12px;
+height: 26px;
+font-weight: 200;
+border-radius: 6px;
+margin-top: 11px;
+
+}
+
+.custom-dropdown a.dropdown-item {
+font-size: 14px;
+color: black;
+font-family: 'Poppins-Regular';
+padding: 8px 21px;
+display: flex;
+align-items: center;
+border-radius: 8px;
+transition: background-color 0.2s ease-in-out;
+}
+.custom-dropdown a.dropdown-item i{
+font-weight: bold;
+font-size: 18px;
+margin-right: 15px !important;
+}
+
+.custom-dropdown a.dropdown-item:hover {
+background-color: #f8f9fa;
+}
+
+.custom-dropdown a.dropdown-item.text-danger {
+color: #dc3545;
+}
+
+.custom-dropdown .dropdown-divider {
+margin: 10px 0;
+}
+.margin-dropdown{
+margin: 14px -7px !important;
+}
+@media(max-width:992px){
+.margin-dropdown{
+    margin: 14px -17px !important;
+}
+
+}
+
+@media(max-width:576px){
+.margin-dropdown{
+    margin: 14px 1px !important;
+}
+
+}
+
+
+
+
+/*  */
+* Themes Submenu */
+.themes-toggle::after {
+    content: '\f0d7'; /* Down arrow */
+    font-family: "Font Awesome 5 Free";
+    float: right;
+    font-weight: 900;
+}
+
+.sub-dropdown {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    list-style: none;
+}
+
+.dropdown:hover .sub-dropdown {
+    display: block;
+}
+
+/* Submenu Items Styling */
+.sub-dropdown a {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sub-dropdown a i {
+    margin-right: 10px;
+}
+
+.sub-dropdown a:hover {
+    background-color: #f8f9fa;
+}
+
+/* Optional Icons Styling */
+.sub-dropdown a i {
+    font-size: 16px;
+    color: #6c757d;
+}
+.sub-dropdown a:hover i {
+    color: #495057;
+}
