@@ -26,15 +26,15 @@ body {
 }
 
 .left-col-main-login {
-    background-image: url(../svg/background\ animation.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+    background-image: url(../svg/background\ animation.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 20px !important;
 }
 
 .left-col-image {
