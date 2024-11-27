@@ -117,7 +117,12 @@
                                 </li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Accounts</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="assets/svg/Vector (40).svg" class ="me-2"> My Profile</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#customModal">
+                                        <img src="assets/svg/Vector (40).svg" class="me-2"> My Profile
+                                    </a>
+                                </li>
+                                
                                 <li class="dropdown dropdown-item">
                                     <a class="ms-1" id="themesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none; color: black;">
                                         <img src="assets/svg/vector (41).svg" class ="me-2"> <span class="dropdown-heaidng-test">Themes</span>
@@ -603,7 +608,54 @@
                     <div id="chartdiv"></div>
                 </div>
             </div>
-
+            <div class="user-page">
+                <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-md">
+                        <div class="modal-content">
+                            <div class="d-flex justify-content-between mb-4">
+                                <h5 class="modal-title" id="customModalLabel"><img src="assets/svg/user-plus@2x.svg"
+                                        class="me-2">Profile Settings</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/images/efb939fd00c58b82e1c135dd85678986.png" class="main-test-image-profile" alt="">
+                                    <a href=""><img src="assets/svg/Frame 55127.svg" class="profile-image-camera" alt=""></a>
+                                </div>
+                                <div class="input-container">
+                                    <label for="name" class="modal-label">Full Name</label>
+                                    <input type="text" class="form-control mt-2">
+                                </div>
+                                <div class="input-container mt-3">
+                                    <label for="name" class="modal-label">Email</label>
+                                    <input type="text" class="form-control mt-2">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end me-3">
+                                <button type="button" class="btn modal-save-button">Save</button>
+                            </div>
+                            <h5 class="modal-title mt-4 mb-4" id="customModalLabel"><img src="assets/svg/key.svg"
+                                class="me-2">Update Password</h5>
+                            <div class="input-container mt-3">
+                                <label for="name" class="modal-label">Current Password</label>
+                                <input type="password" class="form-control mt-2">
+                            </div>
+                            <div class="input-container mt-3">
+                                <label for="name" class="modal-label">New Password</label>
+                                <input type="password" class="form-control mt-2">
+                            </div>
+                            <div class="input-container mt-3">
+                                <label for="name" class="modal-label">Confirm Password</label>
+                                <input type="password" class="form-control mt-2">
+                            </div>
+                            <div class="d-flex justify-content-end me-3 mt-3">
+                                <button type="button" class="btn modal-save-button">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         </div>

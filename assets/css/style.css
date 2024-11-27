@@ -1691,3 +1691,13 @@ margin: 14px -7px !important;
     text-decoration: none;
     font-style: none;
 }
+.main-test-image-profile{
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+}
+.profile-image-camera{
+    top: 73px;
+    right: 52px;
+    position: relative;
+}
