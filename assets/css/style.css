@@ -1524,6 +1524,18 @@ body {
     color: #FFFFFF !important;
     padding: 12px 45px;
 }
+.modal-save-button-second {
+    background-color: #0E0042 !important;
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF !important;
+    padding: 12px 20px;
+}
 
 
 
