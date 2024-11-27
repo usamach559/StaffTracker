@@ -1235,7 +1235,7 @@ body {
 
 .report-main-select-card {
     background-color: white !important;
-    padding: 11px 12px;
+    padding: 11px 9px;
     border-radius: 7px;
     width: 138px !important;
 }
@@ -1330,6 +1330,12 @@ body {
     .report-main-select-card .dashboard-main-select-card-heading {
         font-size: 11px;
     }
+     .report-main-select-card3 {
+        max-width: 160px !important;
+        width: 100% !important;
+        border: 1px solid #EEEEEE !important;
+    }
+   
 }
 
 @media(max-width:400px) {
@@ -1345,7 +1351,7 @@ body {
     .report-main-select-card {
         padding: 11px 7px;
         margin-bottom: 10px;
-        width: 127px !important;
+        /* width: 127px !important; */
     }
 }
 
