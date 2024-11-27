@@ -167,7 +167,19 @@ body {
     max-width: 291px !important;
     width: 100% !important;
 }
-
+.navbar-search-input-container-first {
+    position: relative;
+    max-width: 291px !important;
+    width: 100% !important;
+}
+@media (max-width: 992px) {
+    .navbar-search-input-container-first {
+        position: relative;
+        max-width: 291px !important;
+        width: 100% !important;
+        margin-left: 20px;
+    }
+}
 .navbar-search-input {
     background-color: white !important;
     width: 100% !important;
