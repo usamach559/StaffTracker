@@ -1297,7 +1297,7 @@ body {
 .table td {
     --bs-table-bg: transparent;
     --bs-table-border-color: transparent;
-    border-top: 1.4px solid rgba(151, 151, 151, 0.18);
+    border-top: 1.4px solid  transparent;
 }
 
 /* Optional custom styles for the table */
@@ -1379,7 +1379,7 @@ body {
 }
 
 .permission-table-td {
-    background: linear-gradient(to bottom right, #BFD1FF 0%, #F2EFFF 47%, #BFD1FF 100%);
+    background: #DAEBFF;
     padding: 10px;
     border-radius: 7px;
     font-family: 'Poppins-Regular';
@@ -1490,13 +1490,25 @@ body {
     border: 1px solid rgba(238, 238, 238, 1) !important;
     border-radius: 7px !important;
     box-shadow: 0px 1px 2px 0px rgba(184, 200, 224, 0.2);
-
+    font-family: 'Poppins-Regular'; 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #7D8592 !important   ;
 }
-.user-page .form-select option{
-    background-color: transparent;
-    border: 1px solid rgba(238, 238, 238, 1) !important;
-    border-radius: 7px !important;
-    box-shadow: 0px 1px 2px 0px rgba(184, 200, 224, 0.2);
+.user-page .form-select option,
+.user-page .form-select {
+    font-family: 'Poppins-Regular'; 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #7D8592 !important   ;
 
 }
 

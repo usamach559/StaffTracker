@@ -151,11 +151,11 @@
                             <img src="assets/svg/search 1.svg" class="fa-solid fa-search navbar-search-icon">
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex flex-wrap justify-content-end ">
+                    <div class="col-lg-4 d-flex flex-wrap justify-content-end  mt-lg-0 mt-4">
                         <div>
                             <a href="#" class="btn users-btn-role-second d-flex align-items-center gap-2 me-3">
                                 <img src="assets/svg/suitcase.svg" alt="">
-                                Users
+                                Roles
                             </a>
 
                         </div>
@@ -170,14 +170,14 @@
 
                 </div>
                 <div class="table-responsive-lg mt-3">
-                    <table class="table ">
+                    <table class="table  ">
                         <thead class="">
                             <tr>
                                 <th>ID</th>
                                 <th>User</th>
                                 <th>Role</th>
                                 <th>Last Login</th>
-                                <th>Date Created</th>
+                                <th>Joined Date</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -196,7 +196,8 @@
                                 </td>
                                 <td><span class="permission-table-td">
                                         Admin
-                                    </span></td>
+                                    </span>
+                                </td>
                                 <td>12 mins ago </td>
                                 <td>12 July, 2024</td>
                                 <td style="padding: 0px !important; " class="d-flex">
@@ -214,7 +215,6 @@
                     <span class="screenshots-pagenation-page">2</span>
                     <span class="screenshots-pagenation-page">3</span>
                     <a href="#" class="screenshots-pagenation-next">Next →</a>
-
                 </div>
             </div>
 
@@ -241,9 +241,14 @@
                                 </div>
                             </div>
                             <div class="modal-body">
-                                <div class="input-container">
-                                    <label for="name" class="modal-label">Role<span>*</span></label>
-                                    <input type="text" class="form-control mt-2">
+                                <div class="input-container ">
+                                    <label for="role" class="modal-label">Role<span>*</span></label>
+                                    <select id="role" class="form-select mt-2">
+                                        <option selected>Select Permissions</option>
+                                        <option value="admin">Admin</option>
+                                        <option value="editor">Editor</option>
+                                        <option value="viewer">Viewer</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="modal-body">
