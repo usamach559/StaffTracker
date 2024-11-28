@@ -472,7 +472,20 @@ body {
     }
 
     .dashboard-main-select-card {
-        width: 112px !important;
+        width: 101px !important;
+        padding: 11px 3px;
+        display: flex   ;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 380px) {
+    .dashboard-main-select-card-heading {
+        font-size: 9px;
+    }
+
+    .dashboard-main-select-card {
+        width: 94px !important;
         padding: 11px 3px;
         display: flex   ;
         justify-content: center;
