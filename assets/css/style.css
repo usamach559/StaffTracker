@@ -1240,7 +1240,7 @@ body {
     background: linear-gradient(to bottom right, #BFD1FF 0%, #F2EFFF 47%, #BFD1FF 100%);
     background-size: cover;
     box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.1);
-    padding: 27px 0px;
+    padding: 27px 20px;
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 1);
 
@@ -1403,7 +1403,12 @@ body {
     color: white !important;
     padding: 10px 15px;
 }
-
+@media (max-width:450px) {
+    .users-btn-role-second {
+        
+        padding: 10px 1px ;
+    }
+}
 .permission-table-td {
     background: #DAEBFF;
     padding: 10px;
