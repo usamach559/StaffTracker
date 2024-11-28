@@ -52,7 +52,8 @@ body {
     line-height: 1.5;
     text-align: center;
     color: white;
-    max-width: 70%;
+    max-width: 400px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -206,7 +207,8 @@ body {
         line-height: 1.5;
         text-align: left;
         color: white;
-        max-width: 89%;
+        max-width: 331px;
+        width: 100%;
         margin: 0 auto;
     }
 }
