@@ -137,6 +137,19 @@ body {
     width: 100% !important; /* Match parent container width */
 }
 
+.navbar-search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: grey;
+    font-size: 1rem;
+    cursor: pointer;
+    /* Makes the icon interactive */
+    pointer-events: auto;
+    /* Allow click events */
+
+}
 .navbar-search-input {
     width: 100% !important; /* Ensure input fits the container */
     height: 48px;
