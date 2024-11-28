@@ -481,24 +481,15 @@ body {
     background-color: white !important;
     padding: 20px 20px;
     max-width: 290px;
-    margin: auto;
+    /* margin: auto; */
     height: 151px;
     border-radius: 24px;
 
 
 }
 
-@media (max-width: 992px) {
-    .dashboard-second-row-col {
 
-        max-width: 48%;
-
-
-
-    }
-}
-
-@media (max-width: 568px) {
+@media (max-width: 768px) {
     .dashboard-second-row-col {
 
         max-width: 100%;
@@ -507,7 +498,6 @@ body {
 
     }
 }
-
 .dashboard-second-row-col-first {
     background: linear-gradient(270deg, #FFFFFF 0%, #BFD1FF 100%);
     border: 1px solid white !important;

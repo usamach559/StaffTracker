@@ -41,7 +41,7 @@ body {
     max-width: 322px;
     width: 100%;
     height: auto;
-    margin: 0 auto 20px;
+    margin:  auto ;
     margin-top: 20%;
 }
 
@@ -52,7 +52,7 @@ body {
     line-height: 1.5;
     text-align: center;
     color: white;
-    max-width: 400px;
+    max-width: 340px;
     width: 100%;
     margin: 0 auto;
 }
@@ -207,8 +207,7 @@ body {
         line-height: 1.5;
         text-align: left;
         color: white;
-        max-width: 331px;
-        width: 100%;
-        margin: 0 auto;
+     
+       
     }
 }
