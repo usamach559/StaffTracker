@@ -150,6 +150,19 @@ body {
     /* Allow click events */
 
 }
+.forgot-password-login {
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(125, 133, 146, 1);
+    text-decoration: none;
+    font-style: none;
+    cursor: pointer;
+}
 .navbar-search-input {
     width: 100% !important; /* Ensure input fits the container */
     height: 48px;
