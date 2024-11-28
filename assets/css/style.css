@@ -473,7 +473,10 @@ body {
 
     .dashboard-main-select-card {
         width: 112px !important;
-        padding: 11px 5px;
+        padding: 11px 3px;
+        display: flex   ;
+        justify-content: center;
+        align-items: center;
     }
 }
 
