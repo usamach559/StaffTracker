@@ -225,6 +225,20 @@ body {
     border-radius: 50%;
 
 }
+.dropdown-menu .dropdown-menu {
+    position: absolute;
+    left: 00%; /* Align submenu to the right of the parent */
+    top: 50px;
+    display: none; /* Hide by default */
+}
+
+.dropdown-menu .dropdown-menu.show {
+    display: block; /* Show when `show` is toggled */
+}
+
+.dropdown-item.dropdown:hover .dropdown-menu {
+    display: block; /* Ensure it shows on hover */
+}
 
 .theme-switch {
     --toggle-size: 18px;
@@ -485,7 +499,7 @@ body {
     }
 
     .dashboard-main-select-card {
-        width: 94px !important;
+        width: 90px !important;
         padding: 11px 3px;
         display: flex   ;
         justify-content: center;
