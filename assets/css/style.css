@@ -1227,7 +1227,7 @@ body {
 /* setting */
 .settings-first-row-first-heading {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Poppins-Regular';
     color: rgba(0, 0, 0, 1);
 }
@@ -1476,7 +1476,7 @@ body {
     color: rgba(0, 26, 114, 1);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1250px) {
     table {
         display: block;
         overflow-x: auto;
