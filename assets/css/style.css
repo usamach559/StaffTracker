@@ -486,20 +486,20 @@ body {
     }
 
     .dashboard-main-select-card {
-        width: 101px !important;
+        width: 120px  !important;
         padding: 11px 3px;
         display: flex   ;
         justify-content: center;
         align-items: center;
     }
 }
-@media (max-width: 380px) {
+@media (max-width: 424px) {
     .dashboard-main-select-card-heading {
         font-size: 13px;
     }
 
     .dashboard-main-select-card {
-        width: 90px !important;
+        width: 113px !important;
         padding: 11px 3px;
         display: flex   ;
         justify-content: center;
@@ -1434,6 +1434,10 @@ body {
     .users-btn-role-second {
         
         padding: 10px 5px ;
+    }
+    .users-btn-role {
+        
+        padding: 10px 8px ;
     }
 }
 .permission-table-td {
