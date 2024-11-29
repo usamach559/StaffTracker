@@ -482,7 +482,7 @@ body {
 
 @media (max-width: 535px) {
     .dashboard-main-select-card-heading {
-        font-size: 9px;
+        font-size: 13px;
     }
 
     .dashboard-main-select-card {
@@ -495,7 +495,7 @@ body {
 }
 @media (max-width: 380px) {
     .dashboard-main-select-card-heading {
-        font-size: 9px;
+        font-size: 13px;
     }
 
     .dashboard-main-select-card {
@@ -1433,7 +1433,7 @@ body {
 @media (max-width:450px) {
     .users-btn-role-second {
         
-        padding: 10px 1px ;
+        padding: 10px 5px ;
     }
 }
 .permission-table-td {
