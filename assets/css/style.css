@@ -192,6 +192,20 @@ body {
     padding-right: 1rem;
     border: 1px solid #D9D9D9;
     box-shadow: 0px 10px 60px 0px #E2ECF9;
+
+}
+
+.navbar-search-input::placeholder {
+    font-family: 'Poppins-Regular';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #B5B7C0;
+
 }
 
 .navbar-search-icon {
@@ -485,6 +499,7 @@ body {
     padding: 11px 18px;
     border-radius: 7px;
     width: 155px !important;
+    border-radius: 24px;
 }
 
 @media (min-width: 992px) {
@@ -738,7 +753,7 @@ body {
 .dashboard-third-row-first-row-heading {
     font-family: 'Poppins-Regular';
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 30px;
     letter-spacing: -0.01em;
     text-align: center;
@@ -817,7 +832,7 @@ body {
 
 .dashboard-fourth-row-first-row-heading {
     font-family: 'Poppins-Regular';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: -0.01em;
@@ -825,6 +840,34 @@ body {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width:1183px) {
+    .dashboard-fourth-row-first-row-heading {
+        font-family: 'Poppins-Regular';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+@media (max-width:992px) {
+    .dashboard-fourth-row-first-row-heading {
+        font-family: 'Poppins-Regular';
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgba(255, 255, 255, 1);
+    }
 }
 
 .dashboard-blance-issue-alert-hr2 {
@@ -868,6 +911,7 @@ body {
     display: grid;
     align-items: center;
     margin: 0px;
+
     color: rgba(242, 239, 255, 1);
 
 }
@@ -876,9 +920,13 @@ body {
     font-family: 'Poppins-Regular';
     font-size: 14px;
     font-weight: 400;
-    padding-right: 28px;
-    margin: 0px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
     color: rgba(242, 239, 255, 1);
+
 
 }
 
@@ -918,7 +966,7 @@ body {
 }
 
 .dashboard-fourth-row-col-first-padding {
-    padding: 2px 15px 13px 15px;
+    padding: 13px 10px;
 
 
 }
@@ -1220,10 +1268,14 @@ body {
 
 /* setting */
 .settings-first-row-first-heading {
-    font-size: 14px;
-    font-weight: 600;
     font-family: 'Poppins-Regular';
-    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 }
 
 .settings-first-row-first-input {
@@ -1798,26 +1850,15 @@ body {
 
 .position-relative {
     position: relative;
-    /* For positioning the green status relative to the image */
     display: inline-block;
-    /* Ensures the status marker stays next to the image */
 }
 
 .green-status {
     height: 10px;
-    /* Adjusted size of the green circle */
     width: 10px;
-    /* Adjusted size of the green circle */
-    background: green;
-    /* Green color for the status */
+    background: #00C720;
     border-radius: 50%;
-    /* Makes the green circle circular */
-    border: 2px solid white;
-    /* White border for separation from the image */
     position: absolute;
-    /* To place it relative to the image */
     top: 2px;
-    /* Adjusted position for the smaller image */
     right: -2px;
-    /* Adjusted position for the smaller image */
 }
